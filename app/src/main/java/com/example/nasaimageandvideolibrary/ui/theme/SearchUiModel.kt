@@ -1,5 +1,7 @@
 package com.example.nasaimageandvideolibrary.ui.theme
 
+import com.example.nasaimageandvideolibrary.datasource.networking.models.SearchResponse
+
 data class SearchUiModel(
-    var count: Int = 0
+    var response: SearchResponse?
 )

@@ -35,9 +35,7 @@ class SearchViewModel @Inject constructor(
             try {
                 val response = repository.search()
                 _uiState.value = SearchUiState.Loaded(
-                    SearchUiModel(
-                        response.collection.items.count()
-                    )
+                    SearchUiModel(response)
                 )
             } catch (ex: Exception) {
                 if (ex is HttpException && ex.code() == 429) {
