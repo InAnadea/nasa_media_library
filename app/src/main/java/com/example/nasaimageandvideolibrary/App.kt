@@ -17,7 +17,7 @@ fun App() {
                     navController.navigate(Routes.SECOND)
                 })
             }
-            composable(Routes.SECOND) { SecondScreen() }
+            composable(Routes.SECOND) { SearchScreen() }
         }
     }
 }

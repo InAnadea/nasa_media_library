@@ -1,4 +1,6 @@
-package com.example.nasaimageandvideolibrary
+package com.example.nasaimageandvideolibrary.core
+
+import com.example.nasaimageandvideolibrary.BuildConfig
 
 abstract class Config {
     companion object {
