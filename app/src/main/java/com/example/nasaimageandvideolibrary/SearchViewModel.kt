@@ -28,7 +28,7 @@ class SearchViewModel @Inject constructor(
         search("apollo 2011")
     }
 
-    private fun search(query: String? = null) {
+    fun search(query: String? = null) {
         _uiState.value = SearchUiState.Loading
         viewModelScope.launch(coroutineDispatcherProvider.IO()) {
             try {
